@@ -46,6 +46,8 @@ GitHub Pages не запускает Django, поэтому в папке `docs/
 
 Workflow также автоматически копирует свежие CSS/JS из `invites/static/` в `docs/static/`.
 
+Если ранее деплой падал с ошибкой `No artifacts named "github-pages" were found` — это исправлено: сборка артефакта и публикация теперь выполняются в двух разных задачах (`build` и `deploy`), как рекомендует GitHub. Просто сделайте новый `git push` после обновления workflow.
+
 ---
 
 ## Вариант 2: настоящий Django-хостинг (Render / Railway / Fly.io)
