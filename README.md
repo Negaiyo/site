@@ -20,12 +20,6 @@ python manage.py runserver
 python manage.py runserver 127.0.0.1:8001
 ```
 
-Если `python` не находится — используйте полный путь:
-
-```bash
-C:\Users\LEGION\AppData\Local\Programs\Python\Python313\python.exe manage.py runserver
-```
-
 Если видите ошибку `WSGI application 'love_site.wsgi.application' could not be loaded` — значит в текущем окружении не установлен `whitenoise`. Для локального запуска он теперь не обязателен, но для продакшена установите зависимости:
 
 ```bash
