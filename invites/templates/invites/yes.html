@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ура! Напиши когда тебя встретить</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="page-yes">
+    <div class="hearts" id="hearts" aria-hidden="true"></div>
+    <div class="messages" id="messages" aria-hidden="true"></div>
+
+    <main class="celebration">
+        <h1 class="win-text">Ура! Напиши когда тебя встретить</h1>
+        <p class="sub-text">Я уже жду 💕</p>
+        <a class="link-back" href="{% url 'index' %}">Назад</a>
+    </main>
+
+    <script src="{% static 'js/hearts.js' %}"></script>
+</body>
+</html>
